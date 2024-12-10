@@ -1,0 +1,11 @@
+
+AbsreDgaia:
+For fitting absolute reddening curves with Av computed for given
+reddening E(B−V), V-band, absolute brightness Mv, and the
+trigonometric distance Dgaia of the star.
+
+
+
+1_absReddEbvu:
+A single-parameter dust model fit of the absolut reddening curve at
+wavelengths w>0.33mic with unknown trigonometric distance D_Gaia.

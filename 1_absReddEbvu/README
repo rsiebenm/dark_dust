@@ -1,0 +1,69 @@
+Requirements IDL 8.8.2 (darwin x86_64 m64) or install GDL.
+
+Description
+-----------
+
+mp_absredDgaia.pro:
+IDL/GDL program for a single-parameter fit of the reddening curve at
+wavelengths w>0.33mic with unknown trigonometric distance D_Gaia. In
+the program, the relative mass of dark dust is 55% within 1 gram of
+dust.  The visual extinction is derived from the reddening at infinite
+wavelengths of the best dust model fit Av=-E(oo). The C abundance in
+dust of the amorphous carbon grains is treated as a single-free
+parameter; other model parameters remain fixed. The relative
+abundances used to compute the dust masses of various dust populations
+(PAH, VSG, vSi, aC, aSi, small grains) are scaled to achieve a
+gas-to-dust mass ratio of ~125. These dust abundances are verified to
+be consistent with the observed element depletion (Hensley & Draine
+2023), hence the model aligns with the amount of material available
+for dust formation or the total dust mass. The luminosity distance is
+calculated using the apparent Vmag and the absolute magnitude Mv of
+the star.
+
+crossec_Ebv.f: Fortran code for computing cross-sections and optical
+depth using the dust model by Siebenmorgen R. (2023, A&A, 670A, 115)
+for fixed amount of dark dust and given E(B-V). This file must be
+compiled first. Compilation instructions and additional details are
+provided in the file's header.
+
+./Data_Redd2023_AA676_132_Tab4:
+Includes reddening curves for the high-qualityfar UV selected
+reddening curve sample by Siebenmorgen et al 2023, A&A, 676, A132, 292
+
+
+
+- Setup
+--------
+
+
+1) Compile:
+> gfortran -ffixed-line-length-132 -O5 crossec_Ebv.f sigtDark_Ebv.f -o a.crossec_Ebv
+
+2) Start IDL using:
+> idl istart  
+Alternatively, add the necessary libraries to your PATH:
+
+!PATH = './AAstron/:' + !PATH  
+!PATH = './Coyote/:'  + !PATH  
+!PATH = './MPFIT/:'   + !PATH
+
+
+- Example 
+---------
+
+Fit a Single Star: 
+mp_absreDEbvu, 'HD315023' , 0.361, Vmag=10.03, Mv=-2.28,  /ps
+
+
+
+An IDL script to run the reddening curve fit for the sample:
+.r RunAll
+
+
+- Results
+The results will be saved in the ./Result/ directory.
+
+- Additional Info
+Further descriptions are included in the headers of the Files.
+
+

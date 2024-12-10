@@ -1,0 +1,11 @@
+.r meinefkt
+
+berechnet: P[0] + GAUSS1(X, P[1:3])
+
+restore, /verb, 'fakedata.sav'
+
+; werte p(0:4) sind beim start:
+start = [950.D, 2.5, 1., 1000.]
+
+result = MPFITFUN('meienfkt', t, r, rerr, start)
+

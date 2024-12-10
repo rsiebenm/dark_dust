@@ -1,0 +1,71 @@
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   --> crossec_dd              START                            ++++++++++
+  
+ ** Reading 8 input parameters from file jsm12fit.inp
+ ** Reading 2 input parameters from file jsmTaufit.inp
+               ** Rv(Av), tauV, ebv_obs=      6.80    1.70    0.27
+               ** abuc                 =       20.56
+               ** abusi                =       15.00
+               ** abuvsi               =        7.02
+               ** abucvgr              =        5.37
+               ** abucpah              =       19.70
+               ** fDark                =        0.33
+               ** qmrn                 =        2.00
+               ** alec                 =    3.28E-05
+               ** alesi                =    2.70E-05
+               ** arad_polmin_aC       =    1.20E-05
+               ** arad_polmin_Si       =    8.00E-06
+               ** arad_Darkmax         =    3.10E-04
+     *** 5% vaccum and Demyk+22 mix := X50A (92.2%) and E20R 2.8% per volumne
+     ***     porosity of aC and SI Mix     0.05
+  *** rhc, rhgr, rhsi, wmol  1.52E+00  2.24E+00  2.58E+00  1.00E+02
+  Relative volume in Dark dust  :
+       aC        Si        Eis       Vac       total
+       0.30      0.50      0.00      0.20      1.00
+     Density of porous Dark dust =    1.75
+     ***     open:   d.QSi_X922E028V005_idg60 
+     ***     open:   d.QellipaC
+     ***     open:   d.QellipDark
+ 0  2.0  X92E3V5   2  1.0                                                       
+ 0  2.0  ACH2_zub  2 10.000                                                     
+ 0  1.0  Si50C30V  0    0                                                       
+# graphiteDraine2003 nw =          283 nr =            5                        
+# asil_D03 nw =          283 nr =            5                                  
+       Radii aC  :    6.00E-07  3.28E-05    1   83
+       Radii Si  :    6.00E-07  2.70E-05    1   79
+       Radii Dark :   3.28E-05  3.09E-04   83  129
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2170     4.61     1.91  1.800E+15     old : as in data statement    
+    0.2162     4.63     1.84  3.459E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  1  : Mmrn, Mdark, fdark, del     0.12     0.88     0.61     0.82
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2170     4.61     3.67  3.459E+15     old : as in data statement    
+    0.2162     4.63     1.84  3.459E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  2  : Mmrn, Mdark, fdark, del     0.29     0.71     0.66     0.08
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2170     4.61     3.67  3.459E+15     old : as in data statement    
+    0.2162     4.63     1.84  3.459E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  3  : Mmrn, Mdark, fdark, del     0.34     0.66     0.66     0.00
+     abusi    abuc_tot abucaC     abugr   abuvsi  abucpahs  abucpahb 
+     15.0     45.6     20.6      5.4      7.0     19.7      0.0
+  acmass,   Simass,   vgrmass,  vsimass,  pahmass,  tmassDark 
+  2.83E-02  1.72E-01  7.40E-03  1.09E-01  2.72E-02  6.56E-01
+ Mass of MRN, Dark, Mtot, fDar   0.34   0.66   1.00   0.66
+          Tab2: tauV_tot, tauV_dark   =     1.70    0.82
+          N_large+vsg,   N_dark       =    1.128E-04   2.186E-04
+          Mass_mrn, Mass_dark, fdark  =    3.404E-01   6.596E-01   6.579E-01
+                                        
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +++ Dark dust model (Siebennmorgen 2023 A&A, 670A, 115                     +++
+  +++ Amount of dark dust: Eq.2,3 in SC 2023 doi: 10.48550/arXiv.2311.03310) +++
+  +++                crossec_dd              DONE                     ++++++++++
+         

@@ -1,0 +1,19 @@
+.r meinefkt
+
+berechnet: P[0] + GAUSS1(X, P[1:3])
+
+restore, /verb, 'fakedata.sav'
+
+; werte p(0:4) sind beim start:
+start = [950.D, 2.5, 1., 1000.]
+
+;create structure for parainfo: 4 =#parameter
+parin = replicate({fixed:0, limited:[0,0], limits:[0.D,0.D]},4)
+
+parin(0).fixed = 1  ; erster para,eter wird "gefixed" zu:
+start(0) = 1000.
+
+result = MPFITFUN('meinefkt', t, r, rerr, start,parinfo=parin,perror=perr,/quiet)
+
+
+oplot, t, meinefkt(t,result), color=green

@@ -1,0 +1,55 @@
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   --> crossec_Ebv              START                            ++++++++++
+  ! fraction of dust mass in Dark dust:          fDark  =   0.55000000000000004     
+  
+ ** Reading 8 input parameters from file jsm12fit.inp
+ ** Reading 2 input parameters from file jsmTaufit.inp
+               ** Rv(Av), tauV, ebv_obs=      4.56    1.14    0.27
+               ** abuc                 =       53.07
+               ** abusi                =       17.30
+               ** abuvsi               =        6.06
+               ** abucvgr              =       10.38
+               ** abucpah              =        6.06
+               ** fDark                =        0.55
+               ** qmrn                 =        2.50
+               ** alec                 =    2.50E-05
+               ** alesi                =    2.50E-05
+               ** arad_polmin_aC       =    1.20E-05
+               ** arad_polmin_Si       =    8.00E-06
+               ** arad_Darkmax         =    3.10E-04
+   *** 5% vaccum and mix Demyk+22 X50A(92.2%)+E20R(2.8%) per volumne
+   *** porosity of aC and SI Mix  por =    0.05
+   *** rhc, rhgr, rhsi, wmolsi        =   1.52E+00  2.24E+00  2.58E+00  1.00E+02
+  Relative volume in Dark dust  :
+       aC        Si        Eis       Vac       total
+       0.30      0.50      0.00      0.20      1.00
+     Density of porous Dark dust =    1.75
+     ***     open:   d.QSi_X922E028V005_idg60 
+     ***     open:   d.QellipaC
+     ***     open:   d.QellipDark
+ 0  2.0  X92E3V5   2  1.0                                                       
+ 0  2.0  ACH2_zub  2 10.000                                                     
+ 0  1.0  Si50C30V  0    0                                                       
+# graphiteDraine2003 nw =          283 nr =            5                        
+# asil_D03 nw =          283 nr =            5                                  
+       Radii aC  :    6.00E-07  2.45E-05    1   77
+       Radii Si  :    6.00E-07  2.45E-05    1   77
+       Radii Dark :   2.45E-05  3.09E-04   77  129
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   --- iter=  1  : Mmrn, Mdark, fdark, del     0.45     0.55     0.55     0.00
+  Ebv_obs, Ebv_mod, err(obs/mod) =      0.271     0.269     1.008
+            Rv, Rv_mod                =     4.57    4.61
+     abusi    abuc_tot abucaC     abugr   abuvsi  abucpahs  abucpahb 
+     17.3     69.5     53.1     10.4      6.1      6.1      0.0
+  acmass,   Simass,   vgrmass,  vsimass,  pahmass,  tmassDark 
+  8.48E-02  2.30E-01  1.66E-02  1.08E-01  9.68E-03  5.50E-01
+       Mass of MRN, Dark, Mtot, fDark :    0.45   0.55   1.00   0.55
+          N_large+vsg,   N_dark       =    6.496E-05   7.940E-05
+          E(B-V), tauV_tot, tauV_dark =     0.27    1.14    0.32
+          Mass_mrn, Mass_dark, fdark  =    4.500E-01   5.500E-01   5.500E-01
+                                        
+             For fdark = Mdark/(Mmrn+Mdark) recompute tauV:    0.55   1.14
+  +++                crossec_Ebv              DONE                     ++++++++++
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         

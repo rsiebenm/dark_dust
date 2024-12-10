@@ -1,0 +1,49 @@
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   --> crossec_dd              START                            ++++++++++
+  
+ ** Reading 8 input parameters from file jsm12fit.inp
+ ** Reading 2 input parameters from file jsmTaufit.inp
+               ** Rv(Av), tauV, ebv_obs=      5.90    1.96    0.36
+               ** abuc                 =       50.88
+               ** abusi                =       17.36
+               ** abuvsi               =        5.02
+               ** abucvgr              =       10.80
+               ** abucpah              =        4.18
+               ** fDark                =        0.50
+               ** qmrn                 =        2.45
+   *** 5% vaccum and mix Demyk+22 X50A(92.2%)+E20R(2.8%) per volumne
+   *** porosity of aC and SI Mix  por =    0.05
+   *** rhc, rhgr, rhsi, wmolsi        =   1.52E+00  2.24E+00  2.58E+00  1.00E+02
+  Relative volume in Dark dust  :
+       aC        Si        Eis       Vac       total
+       0.30      0.50      0.00      0.20      1.00
+     Density of porous Dark dust =    1.75
+     ***     open:   d.QSi_X922E028V005_idg60 
+     ***     open:   d.QellipaC
+     ***     open:   d.QellipDark
+ 0  2.0  X92E3V5   2  1.0                                                       
+ 0  2.0  ACH2_zub  2 10.000                                                     
+ 0  1.0  Si50C30V  0    0                                                       
+# graphiteDraine2003 nw =          283 nr =            5                        
+# asil_D03 nw =          283 nr =            5                                  
+       Radii aC  :    6.00E-07  2.45E-05    1   77
+       Radii Si  :    6.00E-07  2.45E-05    1   77
+       Radii Dark :   2.45E-05  3.09E-04   77  129
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+     abusi    abuc_tot abucaC     abugr   abuvsi  abucpahs  abucpahb 
+     17.4     65.9     50.9     10.8      5.0      4.2      0.0
+  acmass,   Simass,   vgrmass,  vsimass,  pahmass,  tmassDark 
+  7.21E-02  2.05E-01  1.53E-02  7.98E-02  5.92E-03  6.22E-01
+       Mass of MRN, Dark, Mtot, fDark :    0.38   0.62   1.00   0.63
+          N_large+vsg,   N_dark       =    1.034E-04   1.827E-04
+          E(B-V), tauV_tot, tauV_dark =     0.36    1.96    0.82
+          Mass_mrn, Mass_dark, fdark  =    3.615E-01   6.385E-01   6.303E-01
+                                        
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +++ Dark dust model (Siebennmorgen 2023 A&A, 670A, 115                     +++
+  +++ Amount of dark dust: Eq.2,3 in SC 2023 doi: 10.48550/arXiv.2311.03310) +++
+  +++                crossec_dd              DONE                     ++++++++++
+         

@@ -1,0 +1,94 @@
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   --> crossec_dd              START                            ++++++++++
+  
+ ** Reading 8 input parameters from file jsm12fit.inp
+ ** Reading 2 input parameters from file jsmTaufit.inp
+               ** Rv(Av), tauV, ebv_obs=      2.36    0.68    0.31
+               ** abuc                 =       27.01
+               ** abusi                =       15.00
+               ** abuvsi               =       10.35
+               ** abucvgr              =       17.82
+               ** abucpah              =        4.87
+               ** fDark                =        0.33
+               ** qmrn                 =        2.27
+               ** alec                 =    3.28E-05
+               ** alesi                =    2.11E-05
+               ** arad_polmin_aC       =    1.20E-05
+               ** arad_polmin_Si       =    8.00E-06
+               ** arad_Darkmax         =    1.56E-04
+     *** 5% vaccum and Demyk+22 mix := X50A (92.2%) and E20R 2.8% per volumne
+     ***     porosity of aC and SI Mix     0.05
+  *** rhc, rhgr, rhsi, wmol  1.52E+00  2.24E+00  2.58E+00  1.00E+02
+  Relative volume in Dark dust  :
+       aC        Si        Eis       Vac       total
+       0.30      0.50      0.00      0.20      1.00
+     Density of porous Dark dust =    1.75
+     ***     open:   d.QSi_X922E028V005_idg60 
+     ***     open:   d.QellipaC
+     ***     open:   d.QellipDark
+ 0  2.0  X92E3V5   2  1.0                                                       
+ 0  2.0  ACH2_zub  2 10.000                                                     
+ 0  1.0  Si50C30V  0    0                                                       
+# graphiteDraine2003 nw =          283 nr =            5                        
+# asil_D03 nw =          283 nr =            5                                  
+       Radii aC  :    6.00E-07  3.28E-05    1   83
+       Radii Si  :    6.00E-07  2.11E-05    1   74
+       Radii Dark :   3.28E-05  1.56E-04   83  115
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.91  1.800E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  1  : Mmrn, Mdark, fdark, del     1.00     0.00     0.17     0.50
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.48  1.390E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  2  : Mmrn, Mdark, fdark, del     1.00     0.00     0.08     0.50
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.48  1.390E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  3  : Mmrn, Mdark, fdark, del     1.00     0.00     0.04     0.50
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.48  1.390E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  4  : Mmrn, Mdark, fdark, del     1.00     0.00     0.02     0.50
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.48  1.390E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  5  : Mmrn, Mdark, fdark, del     1.00     0.00     0.01     0.50
+       small PAH: zcpah, zhpah
+                   30.0   12.0
+   Change 2175AA PAH bump using ./Input/PAH2170.wq
+   wel(ir_res(18)), x2170, gam2170,  gam_res(18) 
+    0.2270     4.41     1.48  1.390E+15     old : as in data statement    
+    0.2198     4.55     0.74  1.390E+15     used: as in ./Input/PAH2170.wq
+   --- iter=  6  : Mmrn, Mdark, fdark, del     1.00     0.00     0.01     0.00
+  Ebv_obs, Ebv_mod, err(obs/mod) =      0.311     0.276     1.128
+          Rv = Rv_mod ?               =     2.36    2.66
+     abusi    abuc_tot abucaC     abugr   abuvsi  abucpahs  abucpahb 
+     15.0     49.7     27.0     17.8     10.3      4.9      0.0
+  acmass,   Simass,   vgrmass,  vsimass,  pahmass,  tmassDark 
+  9.20E-02  4.25E-01  6.07E-02  3.95E-01  1.66E-02  1.04E-02
+ Mass of MRN, Dark, Mtot, fDar   0.99   0.01   1.00   0.01
+          Tab2: tauV_tot, tauV_dark   =     0.68    0.00
+          N_large+vsg,   N_dark       =    3.785E-05   0.000E+00
+          Mass_mrn, Mass_dark, fdark  =    1.000E+00   0.000E+00   5.208E-03
+                                        
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +++ Dark dust model (Siebennmorgen 2023 A&A, 670A, 115                     +++
+  +++ Amount of dark dust: Eq.2,3 in SC 2023 doi: 10.48550/arXiv.2311.03310) +++
+  +++                crossec_dd              DONE                     ++++++++++
+         
