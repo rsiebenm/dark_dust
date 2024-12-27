@@ -1,48 +1,41 @@
-# 1-Parameter Estimator of A<sub>V</sub> (1_absReddEbvu):
 
-Code for a 1-parameter dust model fitting the absolute reddening curve
-using V-band photometry, the star's absolute magnitude M<sub>V</sub>,
-and the visual extinction A<sub>V</sub> derived without knowldege of
-the trigonometric distance, under the assumption that 50% of the dust
-mass is in dark dust. 
+# Full-Model Estimator of A<sub>V</sub> (AbsreDgaia):
+
+Code for a full-parameter dust model fitting the absolute reddening
+curve using V-band photometry, the star's absolute magnitude
+M<sub>V</sub>, and the visual extinction A<sub>V</sub> derived from
+the the trigonometric distance D<sub>Gaia</sub>; ; [see](https://github.com/rsiebenm/dark_dust/tree/main/AbseedDgaia)
 
 
 
 ##  📌  Description
 
 
-```bash
-mp_absreDgaia.pro:
-```
+- mp_absreDgaia.pro:
 IDL/GDL program for fitting absolute reddening curves with Av computed
 for given reddening E(B−V), V-band, absolute brightness Mv, and the
 trigonometric distance Dgaia of the star. Chi2 fitter mpfit is used
 with 7 free parameters of the dust model by Siebenmorgen (2023).
 
-
-crossec_AvEbv.f:
+- crossec_AvEbv.f:
 Fortran code for computing cross-sections and optical depth using the
 dust model by Siebenmorgen R. (2023, A&A, 670A, 115).  This file must
 be compiled first. Compilation instructions and additional details are
 provided in the file's header.
 
-
-
-./Data_Redd2023_AA676_132_Tab4:
-
+- ./Data_Redd2023_AA676_132_Tab4:
 Includes reddening curves for the high-qualityfar UV selected
 reddening curve sample by Siebenmorgen et al 2023, A&A, 676, A132, 292
 
 
-
-RunAll.pro: 
+- RunAll.pro: 
 An IDL script to run the reddening curve fit for the sample.
 
 ./Data_Redd2023_AA676_132_Tab4
 Includes reddening curves for each star.
 
-Requirements:
-IDL 8.8.2 (darwin x86_64 m64) or install GDL.
+- Requirements:
+IDL 8.8.2 (darwin x86_64 m64) or install GDL, gfortran
 
 ## 🚀  Quickstart
 
@@ -80,8 +73,7 @@ Dgaia   = 210.3
 mp_absreDgaia, target, Vmag, Ebv_ref, Mv, Dgaia, /ps  
 ```
 
-2) Run for all Stars
-To run the reddening curve fit for all 33 stars in the sample type in idl:
+2) Run the reddening curve fit for all 33 stars in the sample type in idl:
 
 ```bash
 .r RunAll
@@ -95,4 +87,18 @@ The results will be saved in the ./Result/ directory.
 ## 📌  Additional Info
 Further descriptions are included in the headers of the Files.
 
+
+
+## 📌  Reading:
+
+[The distance method](https://doi.org/10.48550/arXiv.2311.03310)
+
+[The dust model](https://doi.org/10.1051/0004-6361/202243860) 
+
+
+## 📌  Contact: 
+
+Ralf.Siebenmorgen@eso.org
+
+https://www.eso.org/~rsiebenm/
 
