@@ -8,7 +8,7 @@ distance.
 A collaborative community effort to unravel the physics of cosmic dust
 and its profound influence on the universe.
 
-![Distance unification before left) after (right)](./DarDustDistance.jpg?raw=true "Dark Dust")
+![Distance unification before left) after (right)](./DarkDustDistance.jpg?raw=true "Dark Dust")
 
 ## 📌  Reading:
 
