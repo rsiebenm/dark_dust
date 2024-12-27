@@ -26,7 +26,8 @@ the the trigonometric distance D<sub>Gaia</sub>; ; [see](https://github.com/rsie
 
 
 ![Distance unification before left) after (right)](./DarkDustDistance.jpg?raw=true "Dark Dust")
-*Distance unification before (left) and  after (right) use of our A<sub>V</sub> estimator.
+* Unification of luminosity and trigonometric (Gaia) distances before
+  (left) and after (right) applying the A<sub>V</sub> estimators.
 
 
 ## 📌  Reading:
