@@ -4,41 +4,39 @@
 Code for a full-parameter dust model fitting the absolute reddening
 curve using V-band photometry, the star's absolute magnitude
 M<sub>V</sub>, and the visual extinction A<sub>V</sub> derived from
-the the trigonometric distance D<sub>Gaia</sub>; ; [see](https://github.com/rsiebenm/dark_dust/tree/main/AbseedDgaia)
+the the trigonometric distance D<sub>Gaia</sub>
 
 
 
 ##  📌  Description
 
 
-- mp_absreDgaia.pro:
+- _mp_absreDgaia.pro_:
 IDL/GDL program for fitting absolute reddening curves with Av computed
 for given reddening E(B−V), V-band, absolute brightness Mv, and the
 trigonometric distance Dgaia of the star. Chi2 fitter mpfit is used
-with 7 free parameters of the dust model by Siebenmorgen (2023).
+with 7 free parameters of the dust model by [Siebenmorgen (2023](https://doi.org/10.48550/arXiv.2311.03310)
 
-- crossec_AvEbv.f:
+- _crossec_AvEbv.f_:
 Fortran code for computing cross-sections and optical depth using the
 dust model by Siebenmorgen R. (2023, A&A, 670A, 115).  This file must
 be compiled first. Compilation instructions and additional details are
 provided in the file's header.
 
-- ./Data_Redd2023_AA676_132_Tab4:
-Includes reddening curves for the high-qualityfar UV selected
-reddening curve sample by Siebenmorgen et al 2023, A&A, 676, A132, 292
+- _./Data_Redd2023_AA676_132_Tab4_:
+Includes reddening curves for the high-quality far UV selected
+reddening curve sample by [Siebenmorgen (2023](https://doi.org/10.48550/arXiv.2311.03310)
 
 
-- RunAll.pro: 
+- _RunAll.pro_: 
 An IDL script to run the reddening curve fit for the sample.
 
-./Data_Redd2023_AA676_132_Tab4
-Includes reddening curves for each star.
 
-- Requirements:
+
+##  📌  Requirements:
 IDL 8.8.2 (darwin x86_64 m64) or install GDL, gfortran
 
 ## 🚀  Quickstart
-
 
 1) Compile:
 ```bash
