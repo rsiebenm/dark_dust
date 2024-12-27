@@ -15,14 +15,14 @@ Code for a 1-parameter dust model fitting the absolute reddening curve
 using V-band photometry, the star's absolute magnitude M<sub>V</sub>,
 and the visual extinction A<sub>V</sub> derived without knowldege of
 the trigonometric distance, under the assumption that 50% of the dust
-mass is in dark dust; [see](https://github.com/rsiebenm/dark_dust/tree/main/1_absReddEbvu)
+mass is in dark dust; [see](https://github.com/rsiebenm/dark_dust/tree/main/AbseedDgaia/Readme.md)
 
 ## 📌  Full-Model Estimator of A<sub>V</sub> (AbsreDgaia):
 
 Code for a full-parameter dust model fitting the absolute reddening
 curve using V-band photometry, the star's absolute magnitude
 M<sub>V</sub>, and the visual extinction A<sub>V</sub> derived from
-the the trigonometric distance D<sub>Gaia</sub>; ; [see](https://github.com/rsiebenm/dark_dust/tree/main/AbseedDgaia)
+the the trigonometric distance D<sub>Gaia</sub>; [see](https://github.com/rsiebenm/dark_dust/tree/main/1_absReddEbvu/Readme.md)
 
 
 ![Distance unification before left) after (right)](./DarkDustDistance.jpg?raw=true "Dark Dust")
