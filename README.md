@@ -29,7 +29,7 @@ the the trigonometric distance D<sub>Gaia</sub>; ; [see](https://github.com/rsie
 
 ## 📌  Reading:
 
-[The method](https://doi.org/10.48550/arXiv.2311.03310)
+[The distance method](https://doi.org/10.48550/arXiv.2311.03310)
 
 [The dust model](https://doi.org/10.1051/0004-6361/202243860) 
 
