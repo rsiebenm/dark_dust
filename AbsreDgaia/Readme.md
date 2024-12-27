@@ -19,8 +19,8 @@ with 7 free parameters of the dust model by [Siebenmorgen (2023](https://doi.org
 
 - _crossec_AvEbv.f_:
 Fortran code for computing cross-sections and optical depth using the
-dust model by Siebenmorgen R. (2023, A&A, 670A, 115).  This file must
-be compiled first. Compilation instructions and additional details are
+dust model by [Siebenmorgen (2023](https://doi.org/10.48550/arXiv.2311.03310). This file must be
+compiled first. Compilation instructions and additional details are
 provided in the file's header.
 
 - _./Data_Redd2023_AA676_132_Tab4_:
@@ -34,7 +34,7 @@ An IDL script to run the reddening curve fit for the sample.
 
 
 ##  📌  Requirements:
-IDL 8.8.2 (darwin x86_64 m64) or install GDL, gfortran
+gfortran, IDL 8.8.2 or install GDL
 
 ## 🚀  Quickstart
 
@@ -59,7 +59,7 @@ Alternatively, add the necessary libraries to your PATH:
 ## 🚀  Example 
 
 1) Fit a Single Star: 
-For a specific target (e.g., HD027778), initialize in idl the input parameters and run for that star mp_absreDgaia
+For a specific target (e.g., HD027778), initialize in idl the input parameters and run for that star _mp_absreDgaia_
 
 ```bash
 target = 'HD027778'  
