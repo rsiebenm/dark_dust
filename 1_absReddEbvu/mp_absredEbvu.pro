@@ -1,14 +1,8 @@
 ; ----------------------------------------------------------------- 
 ; IDL (GDL) Program: mp_absreDEbvu -
-; Modification of mp_absreDgaia for stars with unknow Av
+; Modification of mp_absreDgaia for stars with unknown Av and unknown
+; trigonometric distance Dgaia
 ;
-; Unknowns:
-; In the code, it is assumed that reddening is available only at
-; wavelengths greater than 0.33 microns (e.g., in JHK and UBV bands),
-; and that the trigonometric distance D_Gaia, such as those derived
-; from Gaia parallax, is unknown. Therefore, the visual extinction Av
-; cannot be computed from D_Gaia using Eq. B.2.
-
 ; Knowns: The reddening E(B-V) must be known, and it is assumed that
 ; the relative mass in dark dust is fdark ~55%. This means that in 1
 ; gram of dust, 55% is in the submicron (dark dust) grain
@@ -17,8 +11,15 @@
 ; reddening is computed using mpfit, where all parameters are fixed
 ; except for the single free parameter abuc, which is the C abundance
 ; in the amorphous carbon grains. As starting parameters, those from
-; Siebenmorgen 2023 for the general ISM are used and kept fixed,
+; Siebenmorgen (2023) for the general ISM are used and kept fixed,
 ; except for abuc.
+;
+; Unknowns:
+; In the code, it is assumed that reddening is available only at
+; wavelengths greater than 0.33 microns (e.g., in JHK and UBV bands),
+; and that the trigonometric distance D_Gaia, such as those derived
+; from Gaia parallax, is unknown. Therefore, the visual extinction Av
+; cannot be computed from D_Gaia using Eq. B.2.
 ;
 ; 1) Externals:
 ;   a)   ./MPFIT/mpfit.pro : MPFIT IDL fitting package
