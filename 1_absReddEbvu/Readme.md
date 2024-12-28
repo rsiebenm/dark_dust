@@ -24,8 +24,7 @@ brightness M<sub>V</sub>, and unknown trigonometric distance
 D<sub>Gaia</sub> of the star under the assumption that 50% of the dust
 mass is in dark dust. Chi2 fitter mpfit is used with the C abundance
 in dust of the amorphous carbon grains as a single-free parameter of
-the dust model by [Siebenmorgen
-(2023)]https://doi.org/10.1051/0004-6361/202243860)
+the dust model by [Siebenmorgen(2023)](https://doi.org/10.1051/0004-6361/202243860)
 
 - _crossec_Ebv.f_:
 
@@ -39,8 +38,7 @@ the file's header.
 - _./Data_Redd2023_AA676_132_Tab4_:
 
 Includes reddening curves for the high-quality far UV selected
-reddening curve sample by [Siebenmorgen et al (2023)](
-https://doi.org/10.1051/0004-6361/202244594
+reddening curve sample by [Siebenmorgen et al (2023)](https://doi.org/10.1051/0004-6361/202244594)
 
 
 - _RunAll.pro_: 
