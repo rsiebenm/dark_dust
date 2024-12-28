@@ -30,8 +30,8 @@ provided in the file's header.
 - _./Data_Redd2023_AA676_132_Tab4_:
 
 Includes reddening curves for the high-quality far UV selected
-reddening curve sample by [Siebenmorgen et al (2023)](
-https://doi.org/10.1051/0004-6361/202244594
+reddening curve sample by [Siebenmorgen et al
+(2023)](https://doi.org/10.1051/0004-6361/202244594)
 
 
 
