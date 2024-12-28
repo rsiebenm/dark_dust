@@ -22,8 +22,8 @@ with 7 free parameters of the dust model by [Siebenmorgen
 - _crossec_AvEbv.f_:
 
 Fortran code for computing cross-sections and optical depth using the
-dust model by [Siebenmorgen
-(2023)](https://doi.org/10.48550/arXiv.2311.03310). This file must be
+dust model by [Siebenmorgen et al
+(2024)](https://doi.org/10.48550/arXiv.2311.03310). This file must be
 compiled first. Compilation instructions and additional details are
 provided in the file's header.
 
