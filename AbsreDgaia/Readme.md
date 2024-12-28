@@ -31,7 +31,7 @@ provided in the file's header.
 
 Includes reddening curves for the high-quality far UV selected
 reddening curve sample by [Siebenmorgen et al
-(2023)](https://doi.org/10.1051/0004-6361/202244594
+(2023)](https://doi.org/10.1051/0004-6361/202244594)
 
 
 
