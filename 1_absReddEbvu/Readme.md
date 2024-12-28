@@ -25,12 +25,13 @@ D<sub>Gaia</sub> of the star under the assumption that 50% of the dust
 mass is in dark dust. Chi2 fitter mpfit is used with the C abundance
 in dust of the amorphous carbon grains as a single-free parameter of
 the dust model by [Siebenmorgen
-(2023)](https://doi.org/10.48550/arXiv.2311.03310)
+(2023)]https://doi.org/10.1051/0004-6361/202243860)
 
 - _crossec_Ebv.f_:
 
 Fortran code for computing cross-sections and optical depth using the
-dust model by [Siebenmorgen(2023)](https://doi.org/10.48550/arXiv.2311.03310) for fixed amount of
+method by [Siebenmorgen et al
+(2024)](https://doi.org/10.48550/arXiv.2311.03310) for fixed amount of
 dark dust and given E(B-V). This file must be compiled
 first. Compilation instructions and additional details are provided in
 the file's header.
@@ -38,8 +39,8 @@ the file's header.
 - _./Data_Redd2023_AA676_132_Tab4_:
 
 Includes reddening curves for the high-quality far UV selected
-reddening curve sample by [Siebenmorgen
-(2023)](https://doi.org/10.48550/arXiv.2311.03310)
+reddening curve sample by [Siebenmorgen et al (2023)](
+https://doi.org/10.1051/0004-6361/202244594
 
 
 - _RunAll.pro_: 
