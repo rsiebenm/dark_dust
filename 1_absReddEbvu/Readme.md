@@ -3,12 +3,12 @@
 
 Code for a 1-parameter dust model fitting the absolute reddening curve
 using V-band photometry, E(B-V), and the star's absolute magnitude
-M<sub>V</sub>.  The trigonometric distance D<sub.Gaia<\sub> and the
+M<sub>V</sub>.  The trigonometric distance D<sub>Gaia<\sub> and the
 visual extinction A<sub>V</sub> are unknowns.  The visual extinction
 is derived from the reddening at infinite wavelengths of the best dust
-model fit Av=-E(oo). The C abundance in dust of the amorphous carbon
-grains is treated as a single-free parameter under the assumption that
-50% of the dust mass is in dark dust.
+model fit A<sub>V</sub> = - E(oo). The C abundance in dust of the
+amorphous carbon grains is treated as a single-free parameter under
+the assumption that 50% of the dust mass is in dark dust.
 
 
 
@@ -20,10 +20,11 @@ grains is treated as a single-free parameter under the assumption that
 
 IDL/GDL program for fitting absolute reddening curves with
 A<sub>V</sub> computed for given reddening E(B−V), V-band, absolute
-brightness M<sub>V</sub>, and the trigonometric distance
-D<sub.Gaia<\sub> of the star. Chi2 fitter mpfit is used with the C
-abundance in dust of the amorphous carbon grains as a single-free
-parameter of the dust model by [Siebenmorgen
+brightness M<sub>V</sub>, and unknown trigonometric distance
+D<sub>Gaia<\sub> of the star under the assumption that 50% of the dust
+mass is in dark dust. Chi2 fitter mpfit is used with the C abundance
+in dust of the amorphous carbon grains as a single-free parameter of
+the dust model by [Siebenmorgen
 (2023)](https://doi.org/10.48550/arXiv.2311.03310)
 
 - _crossec_Ebv.f_:
@@ -35,8 +36,10 @@ first. Compilation instructions and additional details are provided in
 the file's header.
 
 - _./Data_Redd2023_AA676_132_Tab4_:
+
 Includes reddening curves for the high-quality far UV selected
-reddening curve sample by [Siebenmorgen (2023)](https://doi.org/10.48550/arXiv.2311.03310)
+reddening curve sample by [Siebenmorgen
+(2023)](https://doi.org/10.48550/arXiv.2311.03310)
 
 
 - _RunAll.pro_: 
@@ -50,7 +53,7 @@ gfortran compiler and IDL 8.8.2 or install GDL
 
 1) Compile:
 ```bash
-> gfortran -ffixed-line-length-132 -O5 crossec_AvEbv.f sigtDark_AvEbv.f -o a.crossec_Dgaia
+> gfortran -ffixed-line-length-132 -O5 crossec_Ebv.f sigtDark_Ebv.f -o a.crossec_Ebv
 ```
 
 2) Start IDL using:
