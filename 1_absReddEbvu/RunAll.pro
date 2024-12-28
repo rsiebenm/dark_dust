@@ -27,7 +27,7 @@
 ; described in mp_absredd
 ;
 ; External:  ./a.crossec_Ebv (compile crossec_Ebv.f)
-; Compile:   .r mp_absredEbv            
+; Compile:   .r mp_absredEbvu            
 ; -------------------------------------------------
 ;
 
