@@ -3,7 +3,7 @@
 
 Code for a 1-parameter dust model fitting the absolute reddening curve
 using V-band photometry, E(B-V), and the star's absolute magnitude
-M<sub>V</sub>.  The trigonometric distance D<sub>Gaia<\sub> and the
+M<sub>V</sub>.  The trigonometric distance D<sub>Gaia</sub> and the
 visual extinction A<sub>V</sub> are unknowns.  The visual extinction
 is derived from the reddening at infinite wavelengths of the best dust
 model fit A<sub>V</sub> = - E(oo). The C abundance in dust of the
@@ -21,7 +21,7 @@ the assumption that 50% of the dust mass is in dark dust.
 IDL/GDL program for fitting absolute reddening curves with
 A<sub>V</sub> computed for given reddening E(B−V), V-band, absolute
 brightness M<sub>V</sub>, and unknown trigonometric distance
-D<sub>Gaia<\sub> of the star under the assumption that 50% of the dust
+D<sub>Gaia</sub> of the star under the assumption that 50% of the dust
 mass is in dark dust. Chi2 fitter mpfit is used with the C abundance
 in dust of the amorphous carbon grains as a single-free parameter of
 the dust model by [Siebenmorgen
